@@ -6,7 +6,8 @@ const api = require('./route/empRoute');
 const app = express(); 
 
 // Configuring port, other settings and Middleware
-app.set('port',process.env.PORT||2830);
+app.set('PORT',process.env.PORT||2830);
+// app.set('PORT',2828);
 app.set("view options", {
     layout: false
 });
@@ -28,5 +29,6 @@ app.use('/',api);
 
 //Starting server
 const server = app.listen(app.get('PORT'), function () {
-    console.log("Express server listening on port %d in %s mode", server.address().port, app.settings.env);
+     console.log("Express server listening on port %d in %s mode", server.address().port, app.settings.env);
+ 
 });
