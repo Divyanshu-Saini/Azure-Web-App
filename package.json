@@ -1,0 +1,32 @@
+{
+  "name": "azure-web-app",
+  "version": "1.0.0",
+  "description": "Demonstarating the use of Azure web app with simple employee data management web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devstart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divyanshu-Saini/Azure-Web-App.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "mssql",
+    "azure"
+  ],
+  "author": "Divyanshu Saini",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Divyanshu-Saini/Azure-Web-App/issues"
+  },
+  "homepage": "https://github.com/Divyanshu-Saini/Azure-Web-App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mssql": "^4.1.0"
+  }
+}
