@@ -37,6 +37,7 @@ const executeQuery = function (res, query) {
             });
         }
     });
+    // sql.close(dbConfig);
 }
 
 
@@ -44,7 +45,7 @@ const executeQuery = function (res, query) {
 //GET API
 router.get("/", function(req , res){
     console.log('hit');
-    let query = "select * from [EmployeeData]";
+    let query = "select * from [Employee]";
     executeQuery (res, query);
 });
 
@@ -53,7 +54,7 @@ router.post("/employee", function(req , res){
     console.log('data in body: ',req.body);
     let id = uuid();
     console.log("id",id);
-    let query = "INSERT INTO [EmployeeData] (ID,fname,lname,age,dob,address,isactive) VALUES (id,req.body.fname,req.body.lname,req.body.age,req.body.dob,req.body.address,resq.body.isactive)";
+    let query = "INSERT INTO [Employee] (ID,fname,lname,age,dob,address,isactive) VALUES (id,req.body.fname,req.body.lname,req.body.age,req.body.dob,req.body.address,resq.body.isactive)";
     executeQuery (res, query);
 });
 

@@ -7,7 +7,7 @@ const app = express();
 
 // Configuring port, other settings and Middleware
 app.set('PORT',process.env.PORT||2830);
-// app.set('PORT',2828);
+app.set("view engine", "jade")
 app.set("view options", {
     layout: false
 });
